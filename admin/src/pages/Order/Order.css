@@ -1,0 +1,166 @@
+.sidebar-content{
+    
+    padding: 20px;
+    width: 960px;
+    min-height: 80vh;
+    background-color: #f8f7f6;
+    padding-top: 30px;
+    margin-top: 17px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgb(100, 98, 98);
+    margin-left: 20px;
+}
+
+.order {
+  padding: 20px;
+}
+.order h1{
+  margin-bottom: 20px;
+}
+.order-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(1000px, 1fr));
+  gap: 20px;
+}
+
+.order-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.order-icon {
+  width: 40%;
+  height: 100%;
+  /* background-color: aqua  ; */
+  
+}
+.order-icon img {
+  width: 100px;
+  height: 100px;
+  margin: 20px 40px;
+}
+.order-infor{
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.order-box2{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order-card h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+.order-item {
+  display: flex;
+  padding: 8px 0;
+  gap: 10px;
+}
+
+.order-item p {
+  margin: 0;
+}
+
+.status {
+  margin-top: 10px;
+  font-weight: bold;
+  color: orange;
+}
+
+.status {
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.status.pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status.cooking {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.status.delivered {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.it-container{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    background-color: #f5f5f5;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.it-container p{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+@media (max-width: 600px){
+
+    .order{
+        padding: 12px;
+    }
+
+    .order h1{
+        font-size: 24px;
+    }
+
+    .order-card{
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .order-infor{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .order-icon img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .order-box1 h3,
+    .order-box2 h3{
+        font-size: 18px;
+    }
+
+    .order-box1 p,
+    .order-box2 p{
+        font-size: 14px;
+    }
+
+    .status{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .order-box2 button{
+        width: 100%;
+    }
+
+    .it-container{
+        padding: 6px 10px;
+    }
+
+    .it-container p{
+        font-size: 13px;
+    }
+}

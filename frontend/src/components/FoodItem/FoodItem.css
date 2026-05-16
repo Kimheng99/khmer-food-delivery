@@ -1,0 +1,79 @@
+.food-item-container{
+    width: 290px;
+    height: 380px;
+    user-select: none;
+    position: relative;
+    transition: 0.5s;
+    
+}
+.food-item-container:hover{
+    transform: scale(1.1);
+}
+.food-item-container .image-item{
+    width: 100%;
+    height: 70%;
+    
+}
+.food-item-container .image-item .food-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    
+    
+    
+    
+}
+.food-item-container .image-item .add-item{
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    bottom: 120px;  
+
+}
+.food-item-container .image-item .add-remove-item{
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    bottom: 120px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 3px;
+    text-align: center;
+    align-items: center;
+
+}
+.food-item-container .image-item .add-remove-item p{
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.food-item-infor .name-rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.food-item-infor .name-rating p{
+    font-weight: bold;
+}
+.food-item-infor .item-des{
+    font-size: 14px;
+    text-indent: 10px;
+    margin: 5px;
+}
+.food-item-infor .item-price{
+    color: red;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+/* Mobile */
+@media (max-width: 768px){
+
+    .image-item{
+        height: 220px;
+    }
+}

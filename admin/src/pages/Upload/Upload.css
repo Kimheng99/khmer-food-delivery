@@ -1,0 +1,94 @@
+h1{
+    color: red;
+}
+.sidebar-content{
+    
+    padding: 10px;
+    width: 960px;
+    min-height: 80vh;
+    background-color: #f8f7f6;
+    padding-top: 10px;
+    margin-top: 17px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgb(100, 98, 98);
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.upload-form{   
+  width: 620px;
+  margin: 0px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.upload-form label{
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 5px;
+}
+
+.upload-form input,
+.upload-form textarea,
+.upload-form select{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.upload-form select{
+    width: 100px;
+}
+
+.upload-form input:focus,
+.upload-form textarea:focus,
+.upload-form select:focus{
+  border-color: #ff6b6b;
+}
+
+.box-upload-img{
+  width: 120px;
+  height: 120px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.box-upload-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+  
+}
+
+.upload-form button{
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  background: #ff6b6b;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-form button:hover{
+  background: #ff4c4c;
+}

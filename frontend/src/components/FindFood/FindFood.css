@@ -1,0 +1,82 @@
+.findFood h1{
+   color: red;
+   margin-bottom: 20px;
+   font-size: 40px;
+   font-weight: 900;
+}
+.findFood{
+    user-select: none;
+}
+.findFood p{
+    margin-bottom: 30px;
+}
+
+.findFood-list-container{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+}
+.box-img{
+    width: 150px;
+    height: 150px;
+}
+.box-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: contain;
+    object-position: center;
+}
+.box-img .active {
+    border: 5px solid red;
+    border-radius: 50%;
+
+}
+.findFood-list{
+    cursor: pointer;
+    transition: 0.5s;
+}
+.findFood-list p{
+    font-weight: 800;
+}
+.findFood-list:hover{
+    transform: scale(1.1);
+}
+@media (max-width: 992px){
+    .findFood {
+        padding: 0px 20px;
+    }
+    .findFood-list-container{
+        overflow-x: auto;
+        gap: 20px;
+       
+    }
+}
+
+@media (max-width:768px){
+    .findFood {
+        padding: 0px 10px;
+    }
+    .findFood h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .findFood p{
+        font-size: 14px;
+    }
+
+    .findFood-list-container{
+        overflow-x: auto;
+        gap: 20px;
+        padding-bottom: 10px;
+    }
+
+    .box-img{
+        width: 100px;
+        height: 100px;
+    }
+}
+

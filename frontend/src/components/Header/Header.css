@@ -1,0 +1,109 @@
+.header {
+    background-color: aqua;
+    width: 100%;
+    height: 89vh;
+    margin: auto;
+    background: url('../../assets/header_backgroud1.jpg') ;
+    background-repeat: no-repeat ;
+    background-size: cover;
+    margin-bottom: 30px;
+    
+}
+.header-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.332);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+    
+}
+.header-content {
+    width: 600px;
+    height: 300px;
+    /* background-color: aqua; */
+    color: #fff;
+    user-select: none;
+}
+.header-content h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.header-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.header-content .button {
+    width: 140px;
+    border-radius: 5%;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    
+}
+.header-content .button .text {
+  color: rgb(5, 5, 5);
+  font-weight: 700;
+  font-size: 1.4em;
+  transition: 400ms;
+  padding: 5px 0px 2px 2px;
+  margin-top:7px ;
+}
+
+.header-content .button svg path {
+  transition: 400ms;
+}
+
+.header-content .button:hover {
+  background-color: black;
+}
+
+.header-content .button:hover .text {
+  color: #faf2f2;
+}
+
+.header-content .button:hover svg path {
+  fill: #181717;
+}
+
+@media (max-width: 992px){
+
+    .header-content h1{
+        font-size: 45px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+    .header{
+        width: 100%;
+        background-repeat: no-repeat ;
+        background-size: cover;
+    }
+
+    .header-container{
+        min-height: 70vh;
+    }
+
+    .header-content{
+        width: 230px;
+    }
+
+    .header-content h1{
+        font-size: 22px;
+    }
+
+    .header-content p{
+        font-size: 12px;
+    }
+
+    .button{
+        width: 100%;
+    }
+}

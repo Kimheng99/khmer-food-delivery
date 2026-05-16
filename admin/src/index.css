@@ -1,0 +1,186 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css");
+html,
+body {
+  width: 98%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+}
+
+.app-container {  
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  gap: 25px;
+}
+
+.page-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Fix repeated sidebar-content width */
+.sidebar-content {
+  width: 100% !important;
+  max-width: 100%;
+  margin-left: 0 !important;
+}
+
+/* ===== iPad ===== */
+@media (max-width: 1024px) {
+  body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: auto;
+}
+  .app-container {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .sidebar-menu {
+    width: 190px;
+    margin-right: 0;
+  }
+
+  .upload-form {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .order-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .order-card {
+    flex-direction: column;
+  }
+
+  .order-icon {
+    width: 100%;
+    text-align: center;
+  }
+
+  .order-infor {
+    width: 100%;
+  }
+}
+
+/* ===== iPhone ===== */
+@media (max-width: 600px) {
+  .navbar {
+    height: 75px;
+    padding: 8px 12px;
+  }
+
+  .logo-title .logo-img {
+    height: 85px;
+  }
+
+  .profile-img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .profile p {
+    font-size: 15px;
+  }
+
+  .app-container {
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .sidebar-menu {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .box {
+    flex-direction: row;
+  }
+
+  .box a {
+    flex: 1;
+    justify-content: center;
+    margin-left: 0;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .sidebar-content {
+    padding: 12px !important;
+    min-height: auto;
+  }
+
+  .upload-form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .upload-form select {
+    width: 100%;
+  }
+
+  .list-table {
+    overflow-x: auto;
+  }
+
+  .list-header,
+  .list-row {
+    min-width: 620px;
+  }
+
+  .order {
+    padding: 0;
+  }
+
+  .order-card {
+    padding: 15px;
+  }
+
+  .order-infor {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .order-icon img {
+    margin: 10px auto;
+  }
+}
+@media (max-width: 600px){
+
+    .navbar{
+        height: 70px;
+        padding: 0 12px;
+    }
+
+    .logo-title{
+        gap: 10px;
+    }
+
+    .logo-img{
+        width: 60px;
+    }
+
+    .profile p{
+        font-size: 18px;
+    }
+
+    .profile-img{
+        width: 42px;
+        height: 42px;
+    }
+}
