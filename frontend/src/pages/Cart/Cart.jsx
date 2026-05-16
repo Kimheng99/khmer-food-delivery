@@ -29,7 +29,7 @@ const Cart = () => {
                       
                     <tr key={item._id}>
                       <td><img 
-                        src={`${BASE_URL}/images/${item.image}`} 
+                        src={`${BASE_URL}/api/images/${item.image}`} 
                         alt={item.name}
                         style={{ width: "50px" }}
                       /></td>

@@ -26,8 +26,8 @@ const SignIn = ({ setShowSignin }) => {
 
         const url =
           current === "Login"
-            ? `${BASE_URL}/auth/login`
-            : `${BASE_URL}/auth/register`;
+            ? `${BASE_URL}/api/auth/login`
+            : `${BASE_URL}/api/auth/register`;
 
         const res = await fetch(url, {
           method: "POST",

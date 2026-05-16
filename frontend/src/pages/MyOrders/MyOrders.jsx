@@ -9,7 +9,7 @@ const MyOrders = () => {
   const fetchOrders = async () => {
     try {
       
-      const res = await fetch(`${BASE_URL}/order/myorders`, {
+      const res = await fetch(`${BASE_URL}/api/order/myorders`, {
           headers: {
             Authorization: `Bearer ${token}`
           }

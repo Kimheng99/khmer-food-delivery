@@ -12,7 +12,7 @@ const List = () => {
 
   const fetchFoods = async () => {
     try {
-      const res = await axios.get(`${BASE_URL}/food/list`)
+      const res = await axios.get(`${BASE_URL}/api/food/list`)
       if (res.data.success) {
         setFoods(res.data.data)
       }
@@ -30,7 +30,7 @@ const List = () => {
   })
 
   if (result.isConfirmed) {
-    const res = await axios.post(`${BASE_URL}/food/remove`, { id })
+    const res = await axios.post(`${BASE_URL}/api/food/remove`, { id })
 
     if (res.data.success) {
       Swal.fire("Deleted!", "", "success")
@@ -62,7 +62,7 @@ const List = () => {
             
             {/* FIXED IMAGE */}
             <img 
-              src={`${BASE_URL}/images/${item.image}`} 
+              src={`${BASE_URL}/api/images/${item.image}`} 
               alt={item.name} 
             />
 

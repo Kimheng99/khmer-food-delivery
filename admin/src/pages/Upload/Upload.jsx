@@ -41,7 +41,7 @@ const Upload = () => {
     formData.append("image", data.image);
 
     try {
-        const response = await fetch(`${BASE_URL}/food/add`, {
+        const response = await fetch(`${BASE_URL}/api/food/add`, {
           method: "POST",
           body: formData
         });

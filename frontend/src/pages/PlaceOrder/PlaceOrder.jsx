@@ -64,7 +64,7 @@ const PlaceOrder = () => {
   };
 
   try {
-    const res = await axios.post(`${BASE_URL}/order/create`, orderData, {
+    const res = await axios.post(`${BASE_URL}/api/order/create`, orderData, {
         headers: {
           Authorization: `Bearer ${token}`
         }

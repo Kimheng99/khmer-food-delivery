@@ -8,13 +8,13 @@ const StoreContextProvider = (props)=>{
     
     const [cartItem, setCartItem] = useState({})
     const [food_list, setFoodList] = useState([]);
-    const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000/api';
+    const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000';
 
 
     useEffect(() => {
     const fetchFoodList = async () => {
         try {
-            const res = await fetch(`${BASE_URL}/food/list`);
+            const res = await fetch(`${BASE_URL}/api/food/list`);
             const data = await res.json();
 
             if (data.success) {

@@ -18,7 +18,7 @@ const Order = () => {
 
   const fetchOrders = async () => {
         try {
-          const res = await axios.get(`${BASE_URL}/order/list`);
+          const res = await axios.get(`${BASE_URL}/api/order/list`);
 
           console.log("API response:", res.data); 
 
@@ -34,7 +34,7 @@ const Order = () => {
       };
   const updateStatus = async (orderId, status) => {
       try {
-        await axios.post(`${BASE_URL}/order/status`, {
+        await axios.post(`${BASE_URL}/api/order/status`, {
           orderId,
           status
         });
@@ -59,7 +59,7 @@ const Order = () => {
         if (result.isConfirmed) {
           try {
             const res = await axios.post(
-              `${BASE_URL}/order/delete`,
+              `${BASE_URL}/api/order/delete`,
               { orderId }
             );
 
