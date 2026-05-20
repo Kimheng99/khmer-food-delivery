@@ -10,6 +10,46 @@ export const createOrder = async (req, res) => {
       deliveryFee,
       total
     } = req.body;
+    if (!customerInfo?.name || !customerInfo?.address || !customerInfo?.phone) {
+      return res.status(400).json({
+        success: false,
+        message: "Please fill customer information"
+      });
+    }
+
+    // check phone number
+    const phoneRegex = /^[0-9]{8,15}$/;
+
+    if (!phoneRegex.test(customerInfo.phone)) {
+      return res.status(400).json({
+        success: false,
+        message: "Phone number must be 8 to 15 digits"
+      });
+    }
+
+    // today start: 00:00
+    const startOfDay = new Date();
+    startOfDay.setHours(0, 0, 0, 0);
+
+    // today end: 23:59
+    const endOfDay = new Date();
+    endOfDay.setHours(23, 59, 59, 999);
+
+    // count today orders of this user
+    const todayOrderCount = await Order.countDocuments({
+      userId: req.user.id,
+      createdAt: {
+        $gte: startOfDay,
+        $lte: endOfDay
+      }
+    });
+
+    if (todayOrderCount >= 10) {
+      return res.status(400).json({
+        success: false,
+        message: "You can only create 10 orders per day"
+      });
+    }
 
     const order = new Order({
       userId: req.user.id,

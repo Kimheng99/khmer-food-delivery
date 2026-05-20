@@ -108,11 +108,11 @@ const Order = () => {
                   <p><b>Phone:</b> {order.customerInfo.phone}</p>
 
                   <h3>Items</h3>
-                  {order.items.map((item) => (
+                  {order.items.map((item, index) => (
                       <div className='it-container'>
-                        <p>{item.name}</p>
-                        <p>${item.price} x</p>
-                        <p>{item.quantity}</p>
+                        <p key={index}>{item.name}</p>
+                        <p key={index}>${item.price} x</p>
+                        <p key={index}>{item.quantity}</p>
                       </div>
                     ))}
               </div>

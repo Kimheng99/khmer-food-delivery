@@ -62,7 +62,7 @@ const List = () => {
             
             {/* FIXED IMAGE */}
             <img 
-              src={`${BASE_URL}/api/images/${item.image}`} 
+              src={item.image} 
               alt={item.name} 
             />
 
