@@ -92,3 +92,46 @@ h1{
 .upload-form button:hover{
   background: #ff4c4c;
 }
+/* ===== iPhone SE / small phones (≤ 375px) ===== */
+
+
+/* ===== iPhone standard (376px – 430px) ===== */
+@media  (max-width: 430px) {
+  .upload-form {
+    width: 300px;
+    margin-left:22px ;
+  }
+
+  .sidebar-content {
+    padding: 1.25rem;
+  }
+
+  .box-upload-img {
+    height: 160px;
+  }
+}
+
+/* ===== iPad portrait (768px) ===== */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .upload-form {
+    width: 400px;
+  }
+  .sidebar-content {
+    max-width: 520px;
+    padding: 2rem;
+    margin: 20px;
+  }
+
+  .box-upload-img {
+    height: 200px;
+  }
+
+  .upload-form input[type="text"],
+  .upload-form input[type="number"],
+  .upload-form select,
+  .upload-form textarea {
+    padding: 0.65rem 0.875rem;
+  }
+}
+
+/* ===== iPad landscape / iPad Pro (1024px+) ===== */

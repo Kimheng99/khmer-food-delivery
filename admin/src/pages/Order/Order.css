@@ -101,7 +101,7 @@
     display: flex;
     flex-direction: row;
     gap: 5px;
-    background-color: #f5f5f5;
+    
     padding: 5px;
     border-radius: 8px;
     margin: 10px;
@@ -112,55 +112,184 @@
     font-size: 15px;
     font-weight: 500;
 }
-@media (max-width: 600px){
-
-    .order{
-        padding: 12px;
-    }
-
-    .order h1{
-        font-size: 24px;
-    }
-
-    .order-card{
-        padding: 15px;
-        gap: 15px;
-    }
-
-    .order-infor{
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .order-icon img{
-        width: 50px;
-        height: 50px;
-    }
-
-    .order-box1 h3,
-    .order-box2 h3{
-        font-size: 18px;
-    }
-
-    .order-box1 p,
-    .order-box2 p{
-        font-size: 14px;
-    }
-
-    .status{
-        width: 100%;
-        font-size: 14px;
-    }
-
-    .order-box2 button{
-        width: 100%;
-    }
-
-    .it-container{
-        padding: 6px 10px;
-    }
-
-    .it-container p{
-        font-size: 13px;
-    }
+@media (min-width: 430px) and (max-width: 767px) {
+  
+  
+  .order-card {
+    flex-direction: row;
+    align-items: flex-start;
+    
+  }
+ 
+  .order-icon {
+    width: 52px;
+    height: 52px;
+    margin-top: 0.2rem;
+  }
+ 
+  .order-infor {
+    flex: 1;
+    min-width: 0;
+  }
+}
+ 
+/* ============================================
+   iPad portrait  (768px – 1024px)
+   ============================================ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .order {
+    padding: 2rem 1rem;
+    
+  }
+ 
+  .order h1 {
+    font-size: 26px;
+    margin-bottom: 1.5rem;
+  }
+ 
+  .order-container {
+    gap: 1.25rem;
+  }
+ 
+  .order-card {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1.25rem;
+    border-radius: 16px;
+    gap: 1.25rem;
+  }
+ 
+  .order-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    margin-top: 0.2rem;
+  }
+ 
+  .order-icon img {
+    width: 32px;
+    height: 32px;
+  }
+ 
+  .order-infor {
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+    min-width: 0;
+  }
+ 
+ 
+ 
+  .order-box2 {
+    width: 300px;
+    flex-shrink: 0;
+    border-top: none;
+    border-left: 1px solid #f3f4f6;
+    padding-top: 0;
+    
+  }
+ 
+  .order-box1 p,
+  .order-box2 p {
+    font-size: 15px;
+  }
+ 
+  .it-container p {
+    font-size: 14px;
+  }
+ 
+  .order-box1 h3,
+  .order-box2 h3 {
+    font-size: 14px;
+  }
+}
+ 
+/* ============================================
+   iPad landscape / iPad Pro  (1025px+)
+   ============================================ */
+@media (min-width: 1025px) {
+  .order {
+    padding: 2rem;
+  }
+ 
+  .order h1 {
+    font-size: 28px;
+    margin-bottom: 1.75rem;
+  }
+ 
+  .order-container {
+    gap: 1.5rem;
+  }
+ 
+  .order-card {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1.5rem;
+    border-radius: 18px;
+    gap: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  }
+ 
+  .order-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+  }
+ 
+  .order-icon img {
+    width: 34px;
+    height: 34px;
+  }
+ 
+  .order-infor {
+    flex: 1;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    min-width: 0;
+  }
+ 
+  .order-box1 {
+    flex: 1;
+    min-width: 0;
+  }
+ 
+  .order-box2 {
+    width: 220px;
+    flex-shrink: 0;
+    border-top: none;
+    border-left: 1px solid #f3f4f6;
+    padding-top: 0;
+    padding-left: 2rem;
+  }
+ 
+  .order-box1 p,
+  .order-box2 p {
+    font-size: 15px;
+  }
+ 
+  .it-container p {
+    font-size: 14px;
+  }
+}
+@media (min-width: 376px) and (max-width: 450px) {
+  .order-icon img{
+    width: 70px;
+    height: 70px;
+  }
+  .order-icon{
+    width: 200px;
+  }
+  .order {
+    padding: 1.25rem 1rem;
+  }
+ 
+  .order-card {
+    padding: 1rem;
+  }
+}
+.order-box2 select{
+  margin-right: 10px;
+  width: 120px;
 }

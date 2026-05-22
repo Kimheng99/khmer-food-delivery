@@ -56,56 +56,130 @@
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
-  .sidebar-content{
-    padding: 1%;
+
+ 
+/* ============================================
+   iPhone standard  (376px – 430px)
+   e.g. iPhone 14, 15, 16
+   ============================================ */
+@media (max-width: 530px) {
+  .sidebar-content {
+    padding: 1.25rem 1rem;
   }
-  .list-table{
-    width: 98%;
-    margin-right: 2%; 
-  }
+ 
   .list-header,
-.list-row {
-  display: grid;
-  grid-template-columns: 80px 1fr 80px 120px 120px;
-  align-items: center;
-  padding: 12px 20px;
+  .list-row {
+    display: grid;
+    /* Image | Name | Price | Action  (hide Category) */
+    grid-template-columns: 100px 0.2fr 50px 80px;
+    padding: 0.65rem 0.875rem;
+  }
+ 
+  /* Hide Category column */
+  .list-header p:nth-child(4),
+  .list-row p:nth-child(4) {
+    display: none;
+  }
+ 
+  .list-row img {
+    width: 44px;
+    height: 44px;
+  }
+ 
+  .list-row p {
+    font-size: 14px;
+  }
 }
+ 
+/* ============================================
+   iPhone Plus / Max  (431px – 767px)
+   e.g. iPhone 14 Plus, 15 Pro Max
+   ============================================ */
+
+ 
+/* ============================================
+   iPad portrait  (768px – 1024px)
+   ============================================ */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sidebar-content {
+    padding: 2rem 1.5rem;
+  }
+ 
+  .sidebar-content h1 {
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+  }
+ 
+  .list-table {
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+ 
+  .list-header,
+  .list-row {
+    grid-template-columns: 72px 0.6fr 90px 120px 90px;
+    padding: 1rem 1.25rem;
+    gap: 0.75rem;
+  }
+ 
+  .list-header p {
+    font-size: 13px;
+  }
+ 
+  .list-row img {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+  }
+ 
+  .list-row p {
+    font-size: 15px;
+  }
+ 
+  .list-row button {
+    font-size: 13px;
+    padding: 0.45rem 0.875rem;
+    min-height: 40px;
+  }
 }
-@media (max-width: 600px){
-
-    .sidebar-content{
-        padding: 12px;
-    }
-
-    .sidebar-content h1{
-        font-size: 22px;
-    }
-
-    .list-table{
-        overflow-x: auto;
-    }
-
-    .list-header,
-    .list-row{
-        min-width: 650px;
-
-        grid-template-columns:
-        70px
-        180px
-        90px
-        120px
-        100px;
-
-        padding: 10px;
-    }
-
-    .list-row p{
-        font-size: 14px;
-    }
-
-    .list-row button{
-        padding: 7px 10px;
-        font-size: 13px;
-    }
+ 
+/* ============================================
+   iPad landscape / iPad Pro  (1025px+)
+   ============================================ */
+@media (min-width: 1025px) {
+  .sidebar-content {
+    padding: 2rem;
+  }
+ 
+  .sidebar-content h1 {
+    font-size: 26px;
+    margin-bottom: 1.5rem;
+  }
+ 
+  .list-header,
+  .list-row {
+    grid-template-columns: 80px 1fr 100px 140px 100px;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+  }
+ 
+  .list-header p {
+    font-size: 13px;
+  }
+ 
+  .list-row img {
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+  }
+ 
+  .list-row p {
+    font-size: 15px;
+  }
+ 
+  .list-row button {
+    font-size: 13px;
+    padding: 0.5rem 1rem;
+    min-height: 40px;
+  }
 }

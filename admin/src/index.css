@@ -7,9 +7,7 @@ body {
   margin: auto;
 }
 
-body {
-  margin: 0;
-}
+
 
 .app-container {  
   display: flex;
