@@ -4,6 +4,7 @@
     user-select: none;
     position: relative;
     transition: 0.5s;
+    margin: 40px 0px;
     
 }
 .food-item-container:hover{
@@ -59,8 +60,10 @@
 }
 .food-item-infor .name-rating p{
     font-weight: bold;
+    height: 32px;
 }
 .food-item-infor .item-des{
+    height: 90px;
     font-size: 14px;
     text-indent: 10px;
     margin: 5px;
