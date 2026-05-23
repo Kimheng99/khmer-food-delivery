@@ -46,6 +46,10 @@
     transform: scale(1.1);
 }
 @media (min-width: 993px) and (max-width: 1200px){
+    
+    .findFood {
+        padding: 40px;
+    }
     .findFood-list-container{
         overflow-x: auto;
         gap: 20px;

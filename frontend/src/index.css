@@ -41,3 +41,10 @@ html {
 }
 
 }
+@media (min-width: 993px) and (max-width: 1200px){
+  html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+    
+}

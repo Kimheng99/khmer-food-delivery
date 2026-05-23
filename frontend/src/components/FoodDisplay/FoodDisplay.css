@@ -1,5 +1,5 @@
 .food-display{
-    width: 86%;
+    width: 100%;
 }
 
 .food-display h1 {
@@ -18,21 +18,21 @@
 @media (min-width: 993px) and (max-width: 1200px){
     .food-display{
         
-        transform: translateX(-90px);
+        transform: translateX(-66px);
     }
 
     .food-display-list{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        gap: 40px;
+        gap: 60px;
         padding: 10px 12%;
         
         
     }
     .food-display h1{
         font-size: 48px;
-        text-align: center;
-        margin-left: 30px;
+       
+        margin-left:140px;
     }
 }
 
