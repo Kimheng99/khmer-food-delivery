@@ -45,6 +45,15 @@
 .findFood-list:hover{
     transform: scale(1.1);
 }
+@media (min-width: 993px) and (max-width: 1200px){
+    .findFood-list-container{
+        overflow-x: auto;
+        gap: 20px;
+       
+    }
+
+}
+
 @media (max-width: 992px){
     .findFood {
         padding: 0px 20px;
