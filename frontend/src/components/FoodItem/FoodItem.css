@@ -10,7 +10,7 @@
     transform: scale(1.1);
 }
 .food-item-container .image-item{
-    width: 100%;
+    width: 96%;
     height: 70%;
     
 }
@@ -76,4 +76,9 @@
     .image-item{
         height: 220px;
     }
+}
+
+@media (min-width: 993px) and (max-width: 1200px){
+    
+   
 }

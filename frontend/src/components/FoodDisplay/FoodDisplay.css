@@ -18,14 +18,15 @@
 @media (min-width: 993px) and (max-width: 1200px){
     .food-display{
         
-        transform: translateX(-100px);
+        transform: translateX(-90px);
     }
 
     .food-display-list{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        gap: 60px;
+        gap: 40px;
         padding: 10px 12%;
+        
         
     }
     .food-display h1{
